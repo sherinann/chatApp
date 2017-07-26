@@ -1,0 +1,10 @@
+<form method="get" action="chats.html">
+    {%  csrf_token %}
+
+    CHATS
+    <br>
+    {%  for p in people%}
+        <a href="/{{ p }}"> {{p}} </a>
+        <br>
+    {%  endfor %}
+</form>

@@ -1,0 +1,10 @@
+<form method="post" action="message.html">
+    {%  csrf_token %}
+
+    <label for="receiver">To: </label>
+    <input id="receiver" type="text" name="receiver" maxlength="100" required />
+     <label for="message">Message </label>
+    <input id="message" type="text" name="message" maxlength="400" required />
+
+    <input type="submit" value="send">
+</form>
