@@ -1,7 +1,54 @@
 
-<form method="post" action="signup.html">
-    {%  csrf_token %}
-    <h4>  {{ form }}</h4>
+<!--<form method="post" action="signup.html">
+
+
 
     <input type="submit" value="create new user">
+</form>-->
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+
+<div class="container ">
+
+   <div class= " col-xs-5 col-md-offset-4" >
+
+<form class="form-signin"  method="post" action="signup.html">
+     {%  csrf_token %}
+    <h2 class="form-signin-heading">
+        please sign up
+    </h2>
+    <label for="inputUser" class="sr-only">username</label>
+    <input id="inputUser" class="form-control"  placeholder="username" required="" autofocus="">
+    <br>
+    <label for="inputEmail" class="sr-only" >Email Address</label>
+    <input type="email" id="inputEmail" class="form-control"  placeholder="email address" required="" autofocus="">
+    <br>
+    <label for="inputPassword" class="sr-only">password</label>
+    <input type="password" id="inputPassword" class="form-control"  placeholder="password" required="" autofocus="">
+    <br>
+    <label for="inputRePassword" class="sr-only">re-enter password</label>
+<input type="password" id="inputRePassword" class="form-control"  placeholder="re-enter password" required="" autofocus="">
+<br>
+<label for="inputPhone" class="sr-only">phone</label>
+<input type="password" id="inputPhone" class="form-control"  placeholder="phone" required="" autofocus="">
+
+<br><div class="checkbox">
+        <label>
+            <input type="checkbox"  value="remember-me">Remember me
+        </label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block"   type="submit">sign up</button>
+    <br>
+    <br>
+    <br>
+
+    <a href="/chat" ><button  class="btn btn-primary"  type="submit">cancel</button></a>
 </form>
+   </div>
+
+</div>
